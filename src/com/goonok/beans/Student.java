@@ -6,18 +6,21 @@ import org.springframework.stereotype.Component;
 @Component
 public class Student {
 
-	@Value("2130")
+	//@Value("2130")
 	private String id;
 
-	@Value("Alamin")
+	//@Value("Alamin")
 	private String name;
 
 	private Address address;
 
-	/*
-	 * public Student(String id, String name, Address address) { super(); this.id =
-	 * id; this.name = name; this.address = address; }
-	 */
+	
+	  public Student(String id, String name, Address address) {
+		  this.id = id; 
+		  this.name = name; 
+		  this.address = address; 
+		  }
+	 
 	public String getId() {
 		return id;
 	}

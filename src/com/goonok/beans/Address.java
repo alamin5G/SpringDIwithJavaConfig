@@ -6,19 +6,22 @@ import org.springframework.stereotype.Component;
 @Component
 public class Address {
 
-	@Value("Masimpur, Zinnat Moholla")
+	//@Value("Masimpur, Zinnat Moholla")
 	private String street;
 
-	@Value("Tongi")
+	//@Value("Tongi")
 	private String city;
 
-	@Value("1271")
+	//@Value("1271")
 	private String postcode;
 
-	/*
-	 * public Address(String street, String city, String postcode) { super();
-	 * this.street = street; this.city = city; this.postcode = postcode; }
-	 */
+	
+	 public Address(String street, String city, String postcode) { 
+	  this.street = street; 
+	  this.city = city; 
+	  this.postcode = postcode; 
+	  }
+	 
 
 	public String getStreet() {
 		return street;

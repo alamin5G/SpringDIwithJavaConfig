@@ -11,7 +11,8 @@ public class SpringConfig {
 	
 	@Bean
 	public Student student() {
-		Student st = new Student();
+		//now we are setting the Dependency Injection with Constructor
+		Student st = new Student("2122", "Nuha", address());
 		
 		st.setAddress(address());
 		return st;
@@ -20,7 +21,7 @@ public class SpringConfig {
 	
 	@Bean
 	public Address address() {
-		Address addr = new Address();
+		Address addr = new Address("Tongi", "Gazipur", "1705");
 		
 		return addr;
 	}
